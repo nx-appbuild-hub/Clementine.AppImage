@@ -49,7 +49,7 @@ all: clean
 	wget --no-check-certificate --output-document=$(PWD)/build/build.rpm http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/protobuf-3.5.0-7.el8.x86_64.rpm
 	cd $(PWD)/build && rpm2cpio $(PWD)/build/build.rpm | cpio -idmv && cd ..
 
-	wget --no-check-certificate --output-document=$(PWD)/build/build.rpm https://download-ib01.fedoraproject.org/pub/epel/testing/8/Everything/x86_64/Packages/l/libprojectM-3.1.7-1.el8.x86_64.rpm
+	wget --no-check-certificate --output-document=$(PWD)/build/build.rpm https://download-ib01.fedoraproject.org/pub/epel/8/Everything/x86_64/Packages/l/libprojectM-3.1.7-1.el8.x86_64.rpm
 	cd $(PWD)/build && rpm2cpio $(PWD)/build/build.rpm | cpio -idmv && cd ..
 
 	wget --no-check-certificate --output-document=$(PWD)/build/build.rpm https://pkgs.dyn.su/el8/base/x86_64/liblastfm-qt5-1.1.0-1.el8.x86_64.rpm

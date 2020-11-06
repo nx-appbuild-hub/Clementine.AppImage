@@ -16,7 +16,7 @@ all: clean
 
 	mkdir --parents $(PWD)/build
 
-	wget --output-document=$(PWD)/build/build.rpm https://pkgs.dyn.su/el8/multimedia/x86_64/clementine-1.4.0-2.el8.rc1.x86_64.rpm
+	wget --output-document=$(PWD)/build/build.rpm https://github.com/clementine-player/Clementine/releases/download/1.3.1/clementine-1.3.1-1.fc23.x86_64.rpm
 	cd $(PWD)/build && rpm2cpio $(PWD)/build/build.rpm | cpio -idmv && cd ..
 
 	wget --output-document=$(PWD)/build/build.rpm http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/qt5-qtbase-5.12.5-4.el8.x86_64.rpm

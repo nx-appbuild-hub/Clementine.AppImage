@@ -16,7 +16,7 @@ all: clean
 
 
 	mkdir --parents $(PWD)/build
-	apprepo --destination=$(PWD)/build appdir clementine libcrypto++6 libqt5sql5-sqlite
+	apprepo --destination=$(PWD)/build appdir clementine libcrypto++6 libqt5sql5-sqlite gstreamer gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-espeak libqt5gstreamer-1.0-0 qtgstreamer-plugins-qt5 gstreamer1.0-plugins-bad gstreamer1.0-libav
 	echo "exec \$${APPDIR}/bin/clementine \"\$${@}\"" >> $(PWD)/build/Clementine.AppDir/AppRun
 
 	rm -rf $(PWD)/build/Clementine.AppDir/*.desktop
